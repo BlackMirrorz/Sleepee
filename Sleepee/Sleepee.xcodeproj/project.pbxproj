@@ -23,6 +23,10 @@
 		A7387041280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738703B280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift */; };
 		A7387042280981D400E2FD13 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A738703D280981D400E2FD13 /* .gitkeep */; };
 		A73870452809822B00E2FD13 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = A73870442809822B00E2FD13 /* PanModal */; };
+		A7387047280985D100E2FD13 /* BMAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7387046280985D100E2FD13 /* BMAudioPlayer.swift */; };
+		A73870492809862000E2FD13 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73870482809862000E2FD13 /* AudioFile.swift */; };
+		A738704B2809863000E2FD13 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738704A2809863000E2FD13 /* FilesManager.swift */; };
+		A738704D2809879F00E2FD13 /* BMAudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738704C2809879F00E2FD13 /* BMAudioStore.swift */; };
 		EB3FB352ACC0AB90DFD12B69 /* Pods_Sleepee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +41,6 @@
 		A738701D28097DD900E2FD13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A738702028097DD900E2FD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A738702228097DD900E2FD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A738702928097F0300E2FD13 /* Sleepee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sleepee.entitlements; sourceTree = "<group>"; };
 		A738702A28097F0800E2FD13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A738702C280980EE00E2FD13 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A738702F2809813700E2FD13 /* SleepTightDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepTightDB.xcdatamodel; sourceTree = "<group>"; };
@@ -46,6 +49,11 @@
 		A738703A280981D400E2FD13 /* TactileSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileSlider.swift; sourceTree = "<group>"; };
 		A738703B280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TactileSlider+UIPointerInteractionDelegate.swift"; sourceTree = "<group>"; };
 		A738703D280981D400E2FD13 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A7387046280985D100E2FD13 /* BMAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMAudioPlayer.swift; sourceTree = "<group>"; };
+		A73870482809862000E2FD13 /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		A738704A2809863000E2FD13 /* FilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
+		A738704C2809879F00E2FD13 /* BMAudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMAudioStore.swift; sourceTree = "<group>"; };
+		A738704F2809887E00E2FD13 /* Sleepee.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Sleepee.entitlements; sourceTree = "<group>"; };
 		DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleepee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,8 +103,10 @@
 		A738701028097DD800E2FD13 /* Sleepee */ = {
 			isa = PBXGroup;
 			children = (
+				A738704F2809887E00E2FD13 /* Sleepee.entitlements */,
 				A7387035280981BB00E2FD13 /* 3rd Party */,
 				A7387034280981AD00E2FD13 /* Database & CloudKit */,
+				A738704E280987E600E2FD13 /* Audio Controls */,
 				A738701128097DD800E2FD13 /* AppDelegate.swift */,
 				A738701328097DD800E2FD13 /* SceneDelegate.swift */,
 				A738701528097DD800E2FD13 /* ViewController.swift */,
@@ -111,8 +121,9 @@
 		A7387034280981AD00E2FD13 /* Database & CloudKit */ = {
 			isa = PBXGroup;
 			children = (
-				A738702928097F0300E2FD13 /* Sleepee.entitlements */,
 				A738702E2809813700E2FD13 /* sleepeeDB.xcdatamodeld */,
+				A738704A2809863000E2FD13 /* FilesManager.swift */,
+				A73870482809862000E2FD13 /* AudioFile.swift */,
 			);
 			path = "Database & CloudKit";
 			sourceTree = "<group>";
@@ -151,6 +162,15 @@
 				A738703D280981D400E2FD13 /* .gitkeep */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		A738704E280987E600E2FD13 /* Audio Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A738704C2809879F00E2FD13 /* BMAudioStore.swift */,
+				A7387046280985D100E2FD13 /* BMAudioPlayer.swift */,
+			);
+			path = "Audio Controls";
 			sourceTree = "<group>";
 		};
 		B81BE46B18F81E22EE7FD1C9 /* Frameworks */ = {
@@ -290,11 +310,15 @@
 			files = (
 				A73870302809813700E2FD13 /* sleepeeDB.xcdatamodeld in Sources */,
 				A7387041280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */,
+				A7387047280985D100E2FD13 /* BMAudioPlayer.swift in Sources */,
+				A738704D2809879F00E2FD13 /* BMAudioStore.swift in Sources */,
 				A738701628097DD800E2FD13 /* ViewController.swift in Sources */,
+				A73870492809862000E2FD13 /* AudioFile.swift in Sources */,
 				A738701228097DD800E2FD13 /* AppDelegate.swift in Sources */,
 				A7387040280981D400E2FD13 /* TactileSlider.swift in Sources */,
 				A738701428097DD800E2FD13 /* SceneDelegate.swift in Sources */,
 				A738703F280981D400E2FD13 /* TactileSliderLayerRenderer.swift in Sources */,
+				A738704B2809863000E2FD13 /* FilesManager.swift in Sources */,
 				A738703E280981D400E2FD13 /* UIColor+ContrastRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
