@@ -1,0 +1,20 @@
+# Manage File
+excluded:
+  - Pods
+
+# Manage disabled Rules
+disabled_rules:
+  - force_cast
+  - large_tuple
+  - force_try
+  - line_length
+  - trailing_whitespace
+  - identifier_name
+
+# Manage Custom Rules
+identifier_name:
+  min_length:
+    error: 1
+
+# Report for GithubAction
+reporter: "github-actions-logging"

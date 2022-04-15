@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A738701228097DD800E2FD13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738701128097DD800E2FD13 /* AppDelegate.swift */; };
+		A738701428097DD800E2FD13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738701328097DD800E2FD13 /* SceneDelegate.swift */; };
+		A738701628097DD800E2FD13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738701528097DD800E2FD13 /* ViewController.swift */; };
+		A738701928097DD800E2FD13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738701728097DD800E2FD13 /* Main.storyboard */; };
+		A738701E28097DD900E2FD13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A738701D28097DD900E2FD13 /* Assets.xcassets */; };
+		A738702128097DD900E2FD13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738701F28097DD900E2FD13 /* LaunchScreen.storyboard */; };
+		A738702B28097F0800E2FD13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A738702A28097F0800E2FD13 /* CloudKit.framework */; };
+		A738702D280980EE00E2FD13 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A738702C280980EE00E2FD13 /* .swiftlint.yml */; };
+		A73870302809813700E2FD13 /* sleepeeDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A738702E2809813700E2FD13 /* sleepeeDB.xcdatamodeld */; };
+		A73870332809817700E2FD13 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = A73870322809817700E2FD13 /* Nuke */; };
+		A738703E280981D400E2FD13 /* UIColor+ContrastRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7387038280981D400E2FD13 /* UIColor+ContrastRatio.swift */; };
+		A738703F280981D400E2FD13 /* TactileSliderLayerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7387039280981D400E2FD13 /* TactileSliderLayerRenderer.swift */; };
+		A7387040280981D400E2FD13 /* TactileSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738703A280981D400E2FD13 /* TactileSlider.swift */; };
+		A7387041280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738703B280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift */; };
+		A7387042280981D400E2FD13 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A738703D280981D400E2FD13 /* .gitkeep */; };
+		A73870452809822B00E2FD13 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = A73870442809822B00E2FD13 /* PanModal */; };
+		EB3FB352ACC0AB90DFD12B69 /* Pods_Sleepee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		507BAC5B9AAB18E6BAAFD51C /* Pods-Sleepee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepee.release.xcconfig"; path = "Target Support Files/Pods-Sleepee/Pods-Sleepee.release.xcconfig"; sourceTree = "<group>"; };
+		789E4318DA36E8A3CF51C396 /* Pods-Sleepee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepee.debug.xcconfig"; path = "Target Support Files/Pods-Sleepee/Pods-Sleepee.debug.xcconfig"; sourceTree = "<group>"; };
+		A738700E28097DD800E2FD13 /* Sleepee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A738701128097DD800E2FD13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A738701328097DD800E2FD13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A738701528097DD800E2FD13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A738701828097DD800E2FD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A738701D28097DD900E2FD13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A738702028097DD900E2FD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A738702228097DD900E2FD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A738702928097F0300E2FD13 /* Sleepee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sleepee.entitlements; sourceTree = "<group>"; };
+		A738702A28097F0800E2FD13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A738702C280980EE00E2FD13 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A738702F2809813700E2FD13 /* SleepTightDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepTightDB.xcdatamodel; sourceTree = "<group>"; };
+		A7387038280981D400E2FD13 /* UIColor+ContrastRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ContrastRatio.swift"; sourceTree = "<group>"; };
+		A7387039280981D400E2FD13 /* TactileSliderLayerRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileSliderLayerRenderer.swift; sourceTree = "<group>"; };
+		A738703A280981D400E2FD13 /* TactileSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileSlider.swift; sourceTree = "<group>"; };
+		A738703B280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TactileSlider+UIPointerInteractionDelegate.swift"; sourceTree = "<group>"; };
+		A738703D280981D400E2FD13 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleepee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A738700B28097DD800E2FD13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73870452809822B00E2FD13 /* PanModal in Frameworks */,
+				A73870332809817700E2FD13 /* Nuke in Frameworks */,
+				EB3FB352ACC0AB90DFD12B69 /* Pods_Sleepee.framework in Frameworks */,
+				A738702B28097F0800E2FD13 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		902A2691C9FA56B3BCF8E038 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				789E4318DA36E8A3CF51C396 /* Pods-Sleepee.debug.xcconfig */,
+				507BAC5B9AAB18E6BAAFD51C /* Pods-Sleepee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A738700528097DD800E2FD13 = {
+			isa = PBXGroup;
+			children = (
+				A738702C280980EE00E2FD13 /* .swiftlint.yml */,
+				A738701028097DD800E2FD13 /* Sleepee */,
+				A738700F28097DD800E2FD13 /* Products */,
+				902A2691C9FA56B3BCF8E038 /* Pods */,
+				B81BE46B18F81E22EE7FD1C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A738700F28097DD800E2FD13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A738700E28097DD800E2FD13 /* Sleepee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A738701028097DD800E2FD13 /* Sleepee */ = {
+			isa = PBXGroup;
+			children = (
+				A7387035280981BB00E2FD13 /* 3rd Party */,
+				A7387034280981AD00E2FD13 /* Database & CloudKit */,
+				A738701128097DD800E2FD13 /* AppDelegate.swift */,
+				A738701328097DD800E2FD13 /* SceneDelegate.swift */,
+				A738701528097DD800E2FD13 /* ViewController.swift */,
+				A738701728097DD800E2FD13 /* Main.storyboard */,
+				A738701D28097DD900E2FD13 /* Assets.xcassets */,
+				A738701F28097DD900E2FD13 /* LaunchScreen.storyboard */,
+				A738702228097DD900E2FD13 /* Info.plist */,
+			);
+			path = Sleepee;
+			sourceTree = "<group>";
+		};
+		A7387034280981AD00E2FD13 /* Database & CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				A738702928097F0300E2FD13 /* Sleepee.entitlements */,
+				A738702E2809813700E2FD13 /* sleepeeDB.xcdatamodeld */,
+			);
+			path = "Database & CloudKit";
+			sourceTree = "<group>";
+		};
+		A7387035280981BB00E2FD13 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				A7387036280981D400E2FD13 /* TactileSlider */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		A7387036280981D400E2FD13 /* TactileSlider */ = {
+			isa = PBXGroup;
+			children = (
+				A7387037280981D400E2FD13 /* Classes */,
+				A738703C280981D400E2FD13 /* Assets */,
+			);
+			path = TactileSlider;
+			sourceTree = "<group>";
+		};
+		A7387037280981D400E2FD13 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7387038280981D400E2FD13 /* UIColor+ContrastRatio.swift */,
+				A7387039280981D400E2FD13 /* TactileSliderLayerRenderer.swift */,
+				A738703A280981D400E2FD13 /* TactileSlider.swift */,
+				A738703B280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A738703C280981D400E2FD13 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A738703D280981D400E2FD13 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B81BE46B18F81E22EE7FD1C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A738702A28097F0800E2FD13 /* CloudKit.framework */,
+				DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A738700D28097DD800E2FD13 /* Sleepee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A738702528097DD900E2FD13 /* Build configuration list for PBXNativeTarget "Sleepee" */;
+			buildPhases = (
+				AAFCC70D0836F04D82C4448C /* [CP] Check Pods Manifest.lock */,
+				A738700A28097DD800E2FD13 /* Sources */,
+				A738700B28097DD800E2FD13 /* Frameworks */,
+				A738700C28097DD800E2FD13 /* Resources */,
+				A738702828097E6000E2FD13 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sleepee;
+			packageProductDependencies = (
+				A73870322809817700E2FD13 /* Nuke */,
+				A73870442809822B00E2FD13 /* PanModal */,
+			);
+			productName = Sleepee;
+			productReference = A738700E28097DD800E2FD13 /* Sleepee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A738700628097DD800E2FD13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A738700D28097DD800E2FD13 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A738700928097DD800E2FD13 /* Build configuration list for PBXProject "Sleepee" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A738700528097DD800E2FD13;
+			packageReferences = (
+				A73870312809817700E2FD13 /* XCRemoteSwiftPackageReference "Nuke" */,
+				A73870432809822B00E2FD13 /* XCRemoteSwiftPackageReference "PanModal" */,
+			);
+			productRefGroup = A738700F28097DD800E2FD13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A738700D28097DD800E2FD13 /* Sleepee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A738700C28097DD800E2FD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A738702D280980EE00E2FD13 /* .swiftlint.yml in Resources */,
+				A738702128097DD900E2FD13 /* LaunchScreen.storyboard in Resources */,
+				A7387042280981D400E2FD13 /* .gitkeep in Resources */,
+				A738701E28097DD900E2FD13 /* Assets.xcassets in Resources */,
+				A738701928097DD800E2FD13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A738702828097E6000E2FD13 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		AAFCC70D0836F04D82C4448C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sleepee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A738700A28097DD800E2FD13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73870302809813700E2FD13 /* sleepeeDB.xcdatamodeld in Sources */,
+				A7387041280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */,
+				A738701628097DD800E2FD13 /* ViewController.swift in Sources */,
+				A738701228097DD800E2FD13 /* AppDelegate.swift in Sources */,
+				A7387040280981D400E2FD13 /* TactileSlider.swift in Sources */,
+				A738701428097DD800E2FD13 /* SceneDelegate.swift in Sources */,
+				A738703F280981D400E2FD13 /* TactileSliderLayerRenderer.swift in Sources */,
+				A738703E280981D400E2FD13 /* UIColor+ContrastRatio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A738701728097DD800E2FD13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A738701828097DD800E2FD13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A738701F28097DD900E2FD13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A738702028097DD900E2FD13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A738702328097DD900E2FD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A738702428097DD900E2FD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A738702628097DD900E2FD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789E4318DA36E8A3CF51C396 /* Pods-Sleepee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sleepee/Sleepee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3367XX4GB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sleepee/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robbins.josh.sleeptight.Sleepee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A738702728097DD900E2FD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507BAC5B9AAB18E6BAAFD51C /* Pods-Sleepee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sleepee/Sleepee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3367XX4GB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sleepee/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robbins.josh.sleeptight.Sleepee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A738700928097DD800E2FD13 /* Build configuration list for PBXProject "Sleepee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A738702328097DD900E2FD13 /* Debug */,
+				A738702428097DD900E2FD13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A738702528097DD900E2FD13 /* Build configuration list for PBXNativeTarget "Sleepee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A738702628097DD900E2FD13 /* Debug */,
+				A738702728097DD900E2FD13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A73870312809817700E2FD13 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A73870432809822B00E2FD13 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A73870322809817700E2FD13 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A73870312809817700E2FD13 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		A73870442809822B00E2FD13 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A73870432809822B00E2FD13 /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A738702E2809813700E2FD13 /* sleepeeDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A738702F2809813700E2FD13 /* SleepTightDB.xcdatamodel */,
+			);
+			currentVersion = A738702F2809813700E2FD13 /* SleepTightDB.xcdatamodel */;
+			path = sleepeeDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A738700628097DD800E2FD13 /* Project object */;
+}
