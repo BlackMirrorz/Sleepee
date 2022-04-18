@@ -29,7 +29,6 @@ enum FilesManager {
   private static let audioDirectoryName = "Audio"
   private static let imageDirectoryName = "Images"
   
-
   private static var documentsDirectory: URL {
     fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
   }

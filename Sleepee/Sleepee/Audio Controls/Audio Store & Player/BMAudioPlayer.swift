@@ -30,8 +30,8 @@ final class BMAudioPlayer: Equatable, Hashable {
     audioFile.uuidIdentifier
   }
   
-  var audioFileType: String {
-    audioFile.audioType
+  var audioType: AudioType {
+    AudioType(rawValue: audioFile.audioType) ?? .soundEffect
   }
   
   private var durationKey = "duration"
@@ -70,6 +70,10 @@ final class BMAudioPlayer: Equatable, Hashable {
       }
     }
   }
+  
+  func destroy() {
+    player = nil
+  }
 }
 
 // MARK: - Callbacks
@@ -92,6 +96,58 @@ extension BMAudioPlayer {
   func resetPlayBackTime() {
     self.stop()
     player?.play()
+  }
+  
+  func setVolume(_ volume: Float) {
+    player?.volume = volume
+  }
+}
+
+// MARK: - Fading
+
+extension BMAudioPlayer {
+  
+  typealias DefaultClosure = ( ()-> Void)?
+  
+  func fadeIn(fadeDuration: TimeInterval, then completion: DefaultClosure = nil) {
+    
+    fadeTimer?.invalidate()
+    let increment = 0.1 / fadeDuration
+    
+    fadeTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] fadeIn in
+      guard let self = self, let audioPlayer = self.player else { return }
+      let newVolume = audioPlayer.volume + Float(increment)
+      
+      switch newVolume < 1.0 {
+      case true:
+        audioPlayer.volume = Float(newVolume)
+      case false:
+        audioPlayer.volume = 1.0
+        fadeIn.invalidate()
+        self.fadeTimer = nil
+        completion?()
+      }
+    }
+  }
+  
+  func fadeOut(fadeDuration: TimeInterval, then completion: DefaultClosure = nil) {
+    
+    fadeTimer?.invalidate()
+    let increment = fadeInterval / fadeDuration
+    
+    fadeTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] fadeOut in
+      guard let self = self, let audioPlayer = self.player else { return }
+      let newVolume = audioPlayer.volume - Float(increment)
+      
+      switch newVolume > 0.0 {
+      case true:
+        audioPlayer.volume = Float(newVolume)
+      case false:
+        audioPlayer.volume = 0.0
+        fadeOut.invalidate()
+        completion?()
+      }
+    }
   }
 }
 

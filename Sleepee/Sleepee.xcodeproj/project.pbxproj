@@ -27,6 +27,15 @@
 		A73870492809862000E2FD13 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73870482809862000E2FD13 /* AudioFile.swift */; };
 		A738704B2809863000E2FD13 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738704A2809863000E2FD13 /* FilesManager.swift */; };
 		A738704D2809879F00E2FD13 /* BMAudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738704C2809879F00E2FD13 /* BMAudioStore.swift */; };
+		A7A25E6E280CED2500A1AD3E /* AudioType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E6D280CED2500A1AD3E /* AudioType.swift */; };
+		A7A25E70280CF52000A1AD3E /* AudioFileRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E6F280CF52000A1AD3E /* AudioFileRepresentable.swift */; };
+		A7A25E76280D0BE100A1AD3E /* AudioPlayBackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E75280D0BE100A1AD3E /* AudioPlayBackData.swift */; };
+		A7A25E79280D0C0700A1AD3E /* CMTime+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E78280D0C0700A1AD3E /* CMTime+Extensions.swift */; };
+		A7A25E7B280D0C5900A1AD3E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E7A280D0C5900A1AD3E /* AudioManager.swift */; };
+		A7A25E7D280D0C9000A1AD3E /* AudioPlayBackTImer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E7C280D0C8F00A1AD3E /* AudioPlayBackTImer.swift */; };
+		A7A25E7F280D0E7300A1AD3E /* ApplicationTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E7E280D0E7300A1AD3E /* ApplicationTimerState.swift */; };
+		A7A25E81280D126E00A1AD3E /* AudioManagerPlayBackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E80280D126D00A1AD3E /* AudioManagerPlayBackState.swift */; };
+		A7A25E84280D12CD00A1AD3E /* AudioPlayBackTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A25E83280D12CD00A1AD3E /* AudioPlayBackTimerState.swift */; };
 		EB3FB352ACC0AB90DFD12B69 /* Pods_Sleepee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +63,15 @@
 		A738704A2809863000E2FD13 /* FilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
 		A738704C2809879F00E2FD13 /* BMAudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMAudioStore.swift; sourceTree = "<group>"; };
 		A738704F2809887E00E2FD13 /* Sleepee.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Sleepee.entitlements; sourceTree = "<group>"; };
+		A7A25E6D280CED2500A1AD3E /* AudioType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioType.swift; sourceTree = "<group>"; };
+		A7A25E6F280CF52000A1AD3E /* AudioFileRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileRepresentable.swift; sourceTree = "<group>"; };
+		A7A25E75280D0BE100A1AD3E /* AudioPlayBackData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayBackData.swift; sourceTree = "<group>"; };
+		A7A25E78280D0C0700A1AD3E /* CMTime+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMTime+Extensions.swift"; sourceTree = "<group>"; };
+		A7A25E7A280D0C5900A1AD3E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A7A25E7C280D0C8F00A1AD3E /* AudioPlayBackTImer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayBackTImer.swift; sourceTree = "<group>"; };
+		A7A25E7E280D0E7300A1AD3E /* ApplicationTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTimerState.swift; sourceTree = "<group>"; };
+		A7A25E80280D126D00A1AD3E /* AudioManagerPlayBackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerPlayBackState.swift; sourceTree = "<group>"; };
+		A7A25E83280D12CD00A1AD3E /* AudioPlayBackTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayBackTimerState.swift; sourceTree = "<group>"; };
 		DC21B8E88C7E41AB78829931 /* Pods_Sleepee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleepee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,11 +124,13 @@
 				A738704F2809887E00E2FD13 /* Sleepee.entitlements */,
 				A7387035280981BB00E2FD13 /* 3rd Party */,
 				A7387034280981AD00E2FD13 /* Database & CloudKit */,
+				A7A25E77280D0BFA00A1AD3E /* Extensions */,
 				A738704E280987E600E2FD13 /* Audio Controls */,
 				A738701128097DD800E2FD13 /* AppDelegate.swift */,
 				A738701328097DD800E2FD13 /* SceneDelegate.swift */,
 				A738701528097DD800E2FD13 /* ViewController.swift */,
 				A738701728097DD800E2FD13 /* Main.storyboard */,
+				A7A25E71280D0B6D00A1AD3E /* Media */,
 				A738701D28097DD900E2FD13 /* Assets.xcassets */,
 				A738701F28097DD900E2FD13 /* LaunchScreen.storyboard */,
 				A738702228097DD900E2FD13 /* Info.plist */,
@@ -124,6 +144,7 @@
 				A738702E2809813700E2FD13 /* sleepeeDB.xcdatamodeld */,
 				A738704A2809863000E2FD13 /* FilesManager.swift */,
 				A73870482809862000E2FD13 /* AudioFile.swift */,
+				A7A25E6F280CF52000A1AD3E /* AudioFileRepresentable.swift */,
 			);
 			path = "Database & CloudKit";
 			sourceTree = "<group>";
@@ -167,10 +188,72 @@
 		A738704E280987E600E2FD13 /* Audio Controls */ = {
 			isa = PBXGroup;
 			children = (
+				A7A25E86280D137D00A1AD3E /* Audio Store & Player */,
+				A7A25E85280D12DC00A1AD3E /* AudioPlayback Timer */,
+				A7A25E82280D12A800A1AD3E /* Audio Manager */,
+				A7A25E7E280D0E7300A1AD3E /* ApplicationTimerState.swift */,
+				A7A25E6D280CED2500A1AD3E /* AudioType.swift */,
+			);
+			path = "Audio Controls";
+			sourceTree = "<group>";
+		};
+		A7A25E71280D0B6D00A1AD3E /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A7A25E74280D0B8100A1AD3E /* Audio */,
+				A7A25E72280D0B7300A1AD3E /* Images */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A7A25E72280D0B7300A1AD3E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A7A25E74280D0B8100A1AD3E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A7A25E77280D0BFA00A1AD3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7A25E78280D0C0700A1AD3E /* CMTime+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7A25E82280D12A800A1AD3E /* Audio Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7A25E7A280D0C5900A1AD3E /* AudioManager.swift */,
+				A7A25E80280D126D00A1AD3E /* AudioManagerPlayBackState.swift */,
+				A7A25E75280D0BE100A1AD3E /* AudioPlayBackData.swift */,
+			);
+			path = "Audio Manager";
+			sourceTree = "<group>";
+		};
+		A7A25E85280D12DC00A1AD3E /* AudioPlayback Timer */ = {
+			isa = PBXGroup;
+			children = (
+				A7A25E7C280D0C8F00A1AD3E /* AudioPlayBackTImer.swift */,
+				A7A25E83280D12CD00A1AD3E /* AudioPlayBackTimerState.swift */,
+			);
+			path = "AudioPlayback Timer";
+			sourceTree = "<group>";
+		};
+		A7A25E86280D137D00A1AD3E /* Audio Store & Player */ = {
+			isa = PBXGroup;
+			children = (
 				A738704C2809879F00E2FD13 /* BMAudioStore.swift */,
 				A7387046280985D100E2FD13 /* BMAudioPlayer.swift */,
 			);
-			path = "Audio Controls";
+			path = "Audio Store & Player";
 			sourceTree = "<group>";
 		};
 		B81BE46B18F81E22EE7FD1C9 /* Frameworks */ = {
@@ -311,12 +394,21 @@
 				A73870302809813700E2FD13 /* sleepeeDB.xcdatamodeld in Sources */,
 				A7387041280981D400E2FD13 /* TactileSlider+UIPointerInteractionDelegate.swift in Sources */,
 				A7387047280985D100E2FD13 /* BMAudioPlayer.swift in Sources */,
+				A7A25E7B280D0C5900A1AD3E /* AudioManager.swift in Sources */,
 				A738704D2809879F00E2FD13 /* BMAudioStore.swift in Sources */,
 				A738701628097DD800E2FD13 /* ViewController.swift in Sources */,
+				A7A25E70280CF52000A1AD3E /* AudioFileRepresentable.swift in Sources */,
+				A7A25E81280D126E00A1AD3E /* AudioManagerPlayBackState.swift in Sources */,
 				A73870492809862000E2FD13 /* AudioFile.swift in Sources */,
 				A738701228097DD800E2FD13 /* AppDelegate.swift in Sources */,
+				A7A25E76280D0BE100A1AD3E /* AudioPlayBackData.swift in Sources */,
 				A7387040280981D400E2FD13 /* TactileSlider.swift in Sources */,
+				A7A25E84280D12CD00A1AD3E /* AudioPlayBackTimerState.swift in Sources */,
+				A7A25E7D280D0C9000A1AD3E /* AudioPlayBackTImer.swift in Sources */,
+				A7A25E7F280D0E7300A1AD3E /* ApplicationTimerState.swift in Sources */,
+				A7A25E6E280CED2500A1AD3E /* AudioType.swift in Sources */,
 				A738701428097DD800E2FD13 /* SceneDelegate.swift in Sources */,
+				A7A25E79280D0C0700A1AD3E /* CMTime+Extensions.swift in Sources */,
 				A738703F280981D400E2FD13 /* TactileSliderLayerRenderer.swift in Sources */,
 				A738704B2809863000E2FD13 /* FilesManager.swift in Sources */,
 				A738703E280981D400E2FD13 /* UIColor+ContrastRatio.swift in Sources */,
